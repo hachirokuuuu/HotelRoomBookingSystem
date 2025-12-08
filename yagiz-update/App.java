@@ -16,7 +16,7 @@ public class App {
         System.out.println("Available rooms based on search criteria:");
         boolean found = false;
 
-        for (Room room : RM.getRooms) {
+        for (Room room : RM.getRooms()) {
             if(room.capacity < criteria.capacity) continue;
             if(!room.withBalcony && criteria.withBalcony) continue;
 
